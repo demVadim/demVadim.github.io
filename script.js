@@ -1,8 +1,11 @@
 "use strict";
-const obj = {
-	name: "vadim",
-	age: 35,
-	isMarried: true
-};
+const num = [23,25,56,67,12];
 
-console.log(obj.name);
+const input = +prompt('Enter a number: ');
+const index = num.indexOf(input);
+
+if(index > -1){
+	console.log(num[index]);
+}else {
+	console.log('non');
+}
