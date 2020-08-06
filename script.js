@@ -1,11 +1,12 @@
 "use strict";
-const num = [23,25,56,67,12];
+const arr = [2,3,5,1,3];
 
-const input = +prompt('Enter a number: ');
-const index = num.indexOf(input);
+const input = +prompt('Enter a number: ');	
+const index = arr.indexOf(input);
 
 if(index > -1){
-	console.log(num[index]);
-}else {
-	console.log('non');
+	arr.splice(index, 1);
 }
+
+
+console.log(arr);
