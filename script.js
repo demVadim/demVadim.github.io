@@ -1,12 +1,10 @@
 "use strict";
-const arr = [2,3,5,1,3];
+let arr = [12,23,34,53,89];
 
-const input = +prompt('Enter a number: ');	
-const index = arr.indexOf(input);
+const number = + prompt('Enter numbers')
 
-if(index > -1){
-	arr.splice(index, 1);
-}
+const newArr = arr.filter(function(el) {
+	return el<number;  
+});
 
-
-console.log(arr);
+console.log(newArr);
