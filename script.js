@@ -1,10 +1,6 @@
 "use strict";
-let arr = [12,23,34,53,89];
+const olimpics = [12,23,45];
 
-const number = + prompt('Enter numbers')
-
-const newArr = arr.filter(function(el) {
-	return el<number;  
-});
-
-console.log(newArr);
+let [gold=0,,bronze=0] = olimpics;
+console.log(gold,bronze);
+console.log(olimpics);
