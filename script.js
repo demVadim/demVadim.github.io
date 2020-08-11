@@ -1,6 +1,5 @@
 "use strict";
-const olimpics = [12,23,45];
+const input = prompt('Enter a text', 'pole');
+const el = document.querySelector('.title');
 
-let [gold=0,,bronze=0] = olimpics;
-console.log(gold,bronze);
-console.log(olimpics);
+el.innerText = input;
