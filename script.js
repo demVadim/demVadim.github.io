@@ -1,5 +1,7 @@
 "use strict";
-const input = prompt('Enter a text', 'pole');
-const el = document.querySelector('.title');
+const input = prompt('Enter a text', '');
+const messageEL = document.createElement('p');
+messageEL.innerText = input;
 
-el.innerText = input;
+const messageBox = document.querySelector('.messages');
+messageBox.append(messageEL);
